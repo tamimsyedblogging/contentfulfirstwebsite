@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="Contentful">
+  <!--<link rel="stylesheet" href="/style/main.css?v=1.0"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lusitana">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+</head>
+<body>
+  <main>
+    {{> header}}
+<!--
+    <div class="c-notification" data-markdown>
+      {{{ contents }}}
+    </div> -->
+
+<!--    <ul class="c-paddedList">
+      {{#each data.entries}}
+        <li>
+          <div class="c-article c-card u-marginBottomLarge">
+            {{> articleHeader fields _fileName=_fileName }}
+
+            <p data-markdown>{{ shorten fields.body }}</p>
+            <a href="{{ _fileName }}">Read more...</a>
+          </div>
+        </li>
+      {{/each}}
+    </ul> -->
+    <div class="container bottom-space">
+        <div class="jumbotron">
+            <div>
+                <h1 class="text-center">Exposing the Mainstream media lies and myth against Islam</h1></div>
+            <p>We are here to bull doze the lies and myth spread by the corrupt by the media. Learn about the true version of Islam on our website and find out the real truth if you are indeed seeking the truth.</p>
+            <div class="center"><a class="text-muted" href="#all-terrorist-not-muslim"><i class="glyphicon glyphicon-chevron-down animated bounce infinite"></i></a></div>
+        </div>
+        <div class="blog-container">
+          {{#each data.entries}}
+            <div class="background-color">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>{{fields.title}}</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="article/{{fields.slug}}.html" target="_blank"><img class="img-responsive" src="{{ fields.featuredImage.fields.file.url }}?w=300&h=300" /></a>
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">{{ fields.description }}</p>
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="{{ _fileName }}" id="myth-button-1">LEARN MORE</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              {{/each}}
+    </div>
+    </div>
+  </main>
+  {{> footer}}
+</body>
+</html>

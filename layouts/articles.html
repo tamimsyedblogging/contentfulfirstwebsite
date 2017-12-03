@@ -52,12 +52,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="article/{{fields.slug}}.html" target="_blank"><img class="img-responsive" src="{{ fields.featuredImage.fields.file.url }}?w=300&h=300" /></a>
+                        <a href="/{{fields.slug}}" target="_blank"><img class="img-responsive" src="{{ fields.featuredImage.fields.file.url }}?w=300&h=300" /></a>
                     </div>
                     <div class="col-md-8">
                       <p class="blog-section">{{ fields.description }}</p>
                         <div class="row">
-                            <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="{{ _fileName }}" id="myth-button-1">LEARN MORE</a></div>
+                            <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="{{ fields.slug }}" id="myth-button-1">LEARN MORE</a></div>
                         </div>
                     </div>
                 </div>

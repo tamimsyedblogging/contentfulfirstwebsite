@@ -68,3 +68,32 @@ h3.blog-heading {
     color: #aaa;
     margin-bottom: 0;
 }
+
+div.markdown p
+{
+  font-size:24px;
+}
+
+div.markdown
+{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+div.markdown ul li
+{
+  font-size:24px;
+}
+
+
+div.jumbotron p
+{
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom: 2px
+}
+
+div.footer.share_fb
+{
+  padding-bottom: 20px;
+}

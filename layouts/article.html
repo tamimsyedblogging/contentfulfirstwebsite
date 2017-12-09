@@ -6,8 +6,9 @@
   <meta name="description" content="{{ description }}">
   <meta name="author" content="Contentful">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">
-  <link rel="stylesheet" href="{{base.url}}/assets/css/styles.css">
-  <link rel="stylesheet" href="{{base.url}}/assets/css/animate.css">
+  <link rel="stylesheet" href="http://tamimsyed.netlify.com/assets/css/styles.css">
+  <link rel="stylesheet" href="http://tamimsyed.netlify.com/assets/css/animate.css">
+  <link rel="stylesheet" href="http://tamimsyed.netlify.com/assets/css/article.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lusitana">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic">
@@ -16,22 +17,24 @@
 <body>
   <main>
     {{> header}}
+    <div class="jumbotron">
+      <div class="center">
+        <picture>
+          <source media="(min-width: 465px)" srcset="{{data.fields.featuredImage.fields.file.url}}?w=400&h=400">
+          <img src="{{data.fields.featuredImage.fields.file.url}}?w=345&h=250" >
+</picture>
+      <!--  <img src="{{data.fields.featuredImage.fields.file.url}}" class="img-responsive" /> -->
+      </div>
+        <div>
+            <h1 class="text-center">{{ data.fields.title }}</h1></div>
+            <p><b><i>{{data.fields.description}}<i></b></p>
 
-    <div class="c-notification">
-      <p>The data shown on this page has been generated using the example blog space.</p>
-      <p>In this example the request is limited to a single entry resulting from the fetched entries in <a href="/index.html">index.html</a>.</p>
     </div>
-    <p>
-      <a href="/{{ _parentFileName }}">Go back</a>
-    </p>
-    <article class="c-article">
-      {{> articleHeader data.fields _fileName=_fileName }}
-
-      <div data-markdown>{{ data.fields.body }}</div>
-
-      {{> articleAuthors data.fields }}
-    </article>
+      <div class="markdown" data-markdown>{{ data.fields.body }}</div>
   </main>
   {{> footer}}
+  <script src="http://tamimsyed.netlify.com/assets/js/article.js"></script>
+
 </body>
+
 </html>

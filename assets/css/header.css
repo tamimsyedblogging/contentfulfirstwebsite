@@ -1,0 +1,21 @@
+body {
+  font-family:"Lusitana","Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar-default {
+  background-color:#2780e3;
+  border-color:#2780e3;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color:#ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#ffffff;
+}
+

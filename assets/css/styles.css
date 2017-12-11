@@ -1,6 +1,5 @@
 body {
   font-family:"Lusitana","Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color:#f8f5f0;
 }
 
 p.blog-section {
@@ -55,19 +54,6 @@ h3.blog-heading {
   background-color:#555;
 }
 
-.footer-basic {
-    padding: 40px 0;
-    background-color: #3e3f3a;
-    color: #4b4c4d;
-}
-
-.copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-}
 
 div.markdown p
 {
@@ -90,10 +76,27 @@ div.jumbotron p
 {
   padding-left:20px;
   padding-right:20px;
-  padding-bottom: 2px
+  padding-bottom: 2px;
+}
+
+div.jumbotron
+{
+  background-color: transparent;
+
 }
 
 div.footer.share_fb
+{
+  padding-bottom: 20px;
+}
+
+.scroll-top-abs-container {
+  position:fixed;
+  right:1%;
+  bottom:20%;
+}
+
+div.container.blog-list
 {
   padding-bottom: 20px;
 }

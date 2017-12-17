@@ -100,3 +100,9 @@ div.container.blog-list
 {
   padding-bottom: 20px;
 }
+
+.align-center-div
+{
+  display:flex;
+  justify-content: center;
+}

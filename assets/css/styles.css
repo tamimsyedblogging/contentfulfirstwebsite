@@ -106,3 +106,9 @@ div.container.blog-list
   display:flex;
   justify-content: center;
 }
+
+.border-styling
+{
+  padding-bottom:5px;
+  border-bottom:1px solid;
+}

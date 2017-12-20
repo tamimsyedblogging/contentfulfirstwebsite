@@ -4,19 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The purpose of this site is to burst the myth spread by the media and enlighten the people with correct teachings of Islam.">
+    <meta name="description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.">
     <meta name="robots" content="noodp">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Stop Media Brainwashing - The Truth Engine Land">
-    <meta property="og:description" content="The purpose of this site is to burst the myth spread by the media and enlighten the people with correct teachings of Islam.">
-    <meta property="og:url" content="https://rationalmuslim.netlify.com/">
-    <meta property="og:site_name" content="The Truth Engine Land">
-    <meta property="og:image" content="https://rationalmuslim.netlify.com/assets/img/header.jpg">
+      <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Rational Muslims Website">
+    <meta itemprop="description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.">
+    <meta itemprop="image" content="https://rationalmuslim.netlify.com/assets/img/rationalmuslims.svg">
+
+        <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="The purpose of this site is to burst the myth spread by the media and enlighten the people with correct teachings of Islam.">
-    <meta name="twitter:title" content="Stop Media Brainwashing - The Truth Engine Land">
-    <meta name="twitter:image" content="https://rationalmuslim.netlify.com/assets/img/header.jpg">
+    <meta name="twitter:title" content="Rational Muslims Website">
+    <meta name="twitter:description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.">
+    <meta name="twitter:creator" content="@tamimburaaq">
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="https://rationalmuslim.netlify.com/assets/img/rationalmuslims.svg">
+    <!-- You can use open graph tags to customize link previews.
+Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:title" content="Rational Muslims Website" />
+    <meta property="og:description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rationalmuslim.netlify.com/" />
+    <meta property="og:image" content="https://rationalmuslim.netlify.com/assets/img/rationalmuslims.svg" />
+    <meta name="twitter:card" content="summary_large_image">
     <title>Media vs Islam</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
@@ -24,29 +33,39 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="https://rationalmuslim.netlify.com/assets/css/styles.css">
-<link rel="icon" type="image/gif" href="assets/img/info.png" />
-<link rel="canonical" href="https://rationalmuslim.netlify.com" />
+
+    <link rel="icon" type="image/gif" href="assets/img/info.png" />
+    <link rel="canonical" href="https://rationalmuslim.netlify.com" />
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <header>
         {{> header}}
     </header>
     <div class="container bottom-space">
         <div class="jumbotron">
             <div>
-                <h1 class="text-center">Exposing the Mainstream media lies and myth against Islam</h1></div>
-            <p>We are here to bull doze the lies and myth spread by the corrupt by the media. Learn about the true version of Islam on our website and find out the real truth if you are indeed seeking the truth.</p>
-            <div class="center"><a class="text-muted" href="#all-terrorist-not-muslim"><i class="glyphicon glyphicon-chevron-down animated bounce infinite"></i></a></div>
+                <h1 class="text-center">Rational Muslims Website</h1></div>
+            <p>We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.</p>
         </div>
+        <div class="sharethis-inline-share-buttons"></div>
+
     </div>
     <div class="container blog-list">
         <div>
                     <div class="blog-container">
           {{#each data.entries order=sys.publishedAt }}
-            <div class="background-color">
+            <div class="background-color border-styling">
                 <div class="row">
                     <div class="col-md-12">
                         <header>
@@ -78,6 +97,7 @@
               {{/each}}
     </div>
         </div>
+
         <div>
             <button onclick="topFunction()" id="mytopbutton" title="Go to top">Top</button>
         </div>
@@ -85,6 +105,7 @@
     <footer>
         {{> footer}}
     </footer>
+
 </body>
 
 </html>

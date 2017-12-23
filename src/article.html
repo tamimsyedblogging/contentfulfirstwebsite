@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="Contentful">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:8080/assets/css/styles.css">
+  <link rel="stylesheet" href="http://localhost:8080/assets/css/animate.css">
+  <link rel="stylesheet" href="http://localhost:8080/assets/css/article.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lusitana">
+  <link rel="stylesheet" href="http://localhost:8080/assets/css/header.css">
+  <link rel="stylesheet" href="http://localhost:8080/assets/css/footer.css">
+</head>
+<body>
+  <main>
+    <header>
+    {% include "./common/header.html" %}
+  </header>
+    <div class="jumbotron">
+      <div class="center">
+        <picture>
+          <source media="(min-width: 465px)" srcset="{{imageFileUrl}}?w=400&h=400">
+          <img src="{{imageFileUrl}}?w=345&h=250" >
+</picture>
+      <!--  <img src="{{data.fields.featuredImage.fields.file.url}}" class="img-responsive" /> -->
+      </div>
+        <div>
+            <h1 class="text-center">{{ title }}</h1></div>
+            <p><b><i>{{ description }}<i></b></p>
+
+    </div>
+      <div class="markdown" data-markdown>{{ body }}</div>
+  </main>
+  <footer>
+  {% include "./common/footer.html" %}
+</footer>
+  <script src="http://localhost:8080/assets/js/article.js"></script>
+
+</body>
+
+</html>

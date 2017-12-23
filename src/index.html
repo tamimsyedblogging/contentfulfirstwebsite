@@ -1,22 +1,390 @@
----
-title: Contentful Blog Example space
-contentful:
-  content_type: 2wKn6yEnZewu2SCCkus4as
-  entry_filename_pattern: article/${ fields.slug }
-  entry_template: article.html
-layout: articles.html
----
+<!DOCTYPE html>
+<html>
 
-The data shown on this page has been generated using the example blog space.
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.">
+    <meta name="robots" content="noodp">
+      <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Rational Muslims Website">
+    <meta itemprop="description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.">
+    <meta itemprop="image" content="http://localhost:8080/assets/img/rationalmuslims.svg">
 
-On this example the request is limited to a single <a href="https://www.contentful.com/developers/documentation/content-delivery-api/http/#content-types">contentType</a> (Posts on this case).
+        <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity. -- Rational Muslims Website">
+    <meta name="twitter:description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.">
+    <meta name="twitter:creator" content="@tamimburaaq">
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="http://localhost:8080/assets/img/rationalmuslims.svg">
+    <!-- You can use open graph tags to customize link previews.
+Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:title" content="Rational Muslims Website" />
+    <meta property="og:description" content="We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:8080/" />
+    <meta property="og:image" content="http://localhost:8080/assets/img/rationalmuslims.svg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Media vs Islam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lusitana">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="http://localhost:8080/assets/css/styles.css">
 
-It also rendered single pages for every received entry.
-```
-title: Contentful Blog Example space
-contentful:
-  content_type: 2wKn6yEnZewu2SCCkus4as
-  entry_filename_pattern: article/${ fields.slug }
-  entry_template: article.html
-layout: index.html
-```
+    <link rel="icon" type="image/gif" href="assets/img/info.png" />
+    <link rel="canonical" href="http://localhost:8080" />
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+        
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="http://localhost:8080/">DAWAAH TO NON MUSLIMS</a></li>
+                    <li role="presentation"><a href="http://localhost:8080/muslims">MUSLIM CORNER</a></li>
+                    <li role="presentation"><a href="http://localhost:8080/politics">POLITICS </a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation"><a href="http://localhost:8080/sitemap.html">SITE MAP</a></li>
+                    <li role="presentation"><a href="http://localhost:8080/about-us">ABOUT US</a></li>
+                    <li role="presentation"><a href="http://localhost:8080/contact-us">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    </header>
+    <div class="container bottom-space">
+        <div class="jumbotron">
+            <div>
+                <h1 class="text-center">Rational Muslims Website</h1></div>
+            <p>We are here to show the Non Muslims the real message of Islam which is Peace and Harmony, and why Mainstream media(MSM) always portray Islam and Muslims in a negative image in order to achieve their evil propaganda by misleading humanity.</p>
+        </div>
+        <div class="sharethis-inline-share-buttons"></div>
+
+    </div>
+    <div class="container blog-list">
+        <div>
+                    <div class="blog-container">
+          
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Why Alcohol is prohibited in Islam?</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="article/why-alcohol-is-prohibited-in-islam.html" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/3Zzqi9TM4g6sosgKkuK8Ii/d3da07e738f63093a582d5f88669cae7/no-alcohol.jpg?w=300&h=300" /></a>
+                        
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">O you who have believed, indeed, intoxicants, gambling, [sacrificing on] stone alters [to other than Allah ], and divining arrows are but defilement from the work of Satan, so avoid it that you may be successful. Holy Quran 5:90</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="article/why-alcohol-is-prohibited-in-islam.html" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>It is raining sexual harassment in Hollywood and Western News media circle.</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="article/hollywood-sexual-harassment-westernnewsoutlet.html" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/5BJIJ2A4X6Oy6si4UwawmS/8c2c5f4ca712d1c04f9cbfd70ca26d0e/5a1036cf140000250050e286.jpg?w=300&h=300" /></a>
+                        
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">It is raining sexual harassment in Hollywood and Western news media circle. Thank God, we are getting to know the white collar sexual predators in the Hollywood as well as the News media.</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="article/hollywood-sexual-harassment-westernnewsoutlet.html" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Bursting Media Myth # 3: Jihad Means Holy War</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/misconceptionofjihad" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/2urZNPQjsEmUc4WCyqSqsY/2a49103f0e2fef2ba24d0fa0605077e3/Difference-between-Qitaal-and-Jihad.jpg?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Does anybody know the actual meaning of Jihad? It is not Holy War. Holy War was waged by Fox news and other Mainstream media owners forefather religious crusaders. The real meaning of Jihad is to &quot;strive or struggle&quot;.</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="misconceptionofjihad" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Bursting Media Myth # 1 : All Terrorist Are Muslims.</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/allmuslimsarenotterrorist/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/2h9UlWd34UAUSqUIsKSoAw/f28abc09c2f61554540dfe537165b511/12314162_1128378080507497_5792500528233641538_o.jpg?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Does anybody heard of United Libertaion Front of Assam(ULFA),Maoist, LTTE,Lord Salvation Army, Naxalites, Irish Republican Army and many others. These are the terrorist groups who belongs to Christianity, Hinduism and Judaism as well as Buddhism. </p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="allmuslimsarenotterrorist/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Bursting Media Myth # 5: Islam Is Anti Christ</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/islam-is-not-antichrist/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/4zYvSeZ9GECgKy46aUi2OO/c85f571c5d28f5e5b76e05bbd0754218/569c5c607049a8f54285b6059694aab2.png?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Media always claim that Islam is anti-Christ but the fact is that Islam is actually pro Christ. Islam is the only non Christian faith makes it an article of faith to believe in Jesus Christ(Peace be upon him).</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="islam-is-not-antichrist/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Bursting Media Myth # 4: Media(fake News) Overreport Muslim Terrorist To Create Islamophobia</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/whitenationalist-terrorism-media-underreporting/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/3eXaBVfrbOWqwoUIe60MAe/5c023d711b748d4eae216c029c13049c/maxresdefault.jpg?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Do you believe Mainstream media is fair in reporting the truth to the general public? I wish it is. But it is not the case when it comes to report Non Muslim terrorism such as White supremacist and other terrorist who are not Muslims.</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="whitenationalist-terrorism-media-underreporting/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Holy Quran, the ultimate answer for the Atheist and the Darwinism</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/holyquran-scientific-refuting-athiest-darwinism/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/6zToaGmnviMQKo4ym0Amg2/a371003a2fe8ebf4113c8d0db19c7b6a/universe.jpg?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Atheist around the world follow their own set of rules and have own their understanding of science and religion. They believe that there is no god and the universe came into existence without any supreme power.i.e., the universe has no origin.</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="holyquran-scientific-refuting-athiest-darwinism/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Bursting Media Myth # 6: Islam Subjugate Women</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/islam-subjugate-women-myth-reality/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/5TY1mwr8cwsSoyQeIA8OWu/a784d80257661fee91efba3d819daf1e/IslamicVeil.jpg?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Islam never subjugate woman and it is made to be believed in the eyes of the general public to demonize Islam and Muslims.But the same media exalt Nuns who dressed in the same fashion and dress code. Why this double standards?</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="islam-subjugate-women-myth-reality/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Defending the Prophet Muhammad (Peace be upon him)</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/defendingislam/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/4D0yUB4ZIcQ6GGI08iA8mi/4102abdde7d149b720a1c8d2b92a6e4e/Masjid_Nabvi_85.jpg?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Refuting the allegations made by westerners and the fundamentalist against Prophet Muhammad (Peace be upon him)</p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="defendingislam/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Bursting Media Myth # 2: Islam Support Terrorism</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/islamagainstterrorism/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/74UDqHYw9iwEQ288uwai88/c9cb0af7e01468f3d4ff15ee8862ed3f/no-terrorism-in-islam.jpg?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Islam never support terrorism even in the least. Holy Quran says &quot;Whoever kills a soul unless for a soul or for corruption [done] in the land - it is as if he had slain mankind entirely. And whoever saves one - it is as if he had saved mankind entirely.&quot; </p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="islamagainstterrorism/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+            <div class="background-color border-styling">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 id="animate-myth-1" class="blog-heading"><strong>Top 8 Reason why ISIS is anti-Islamic</strong></h3></header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 align-center-div">
+                      
+                          <a href="/isis-anti-islamic_middleeast/" target="_blank"><img class="img-responsive" src="//images.contentful.com/rtzf554imq6s/3wQOxU4bCUQg0c00GoqyCK/a875b33bfda6c143af5fcf6cf02ad47d/QatarTurkeyGasLine_01.png?w=300&h=300" /></a>
+                         
+                    </div>
+                    <div class="col-md-8">
+                      <p class="blog-section">Everywhere you turn on your TV sets or put on mobile devices to get the latest information in the world, we easily get the news about ISIS which is so called Islamic State of Iraq and Syria. </p>
+                      
+                      <div class="row">
+                          <div class="col-md-3 col-md-offset-9"><a class="btn btn-default" role="button" href="isis-anti-islamic_middleeast/" id="myth-button-1">LEARN MORE</a></div>
+                      </div>
+                       
+                    </div>
+                </div>
+            </div>
+              
+    </div>
+        </div>
+
+        <div>
+            <button onclick="topFunction()" id="mytopbutton" title="Go to top">Top</button>
+        </div>
+    </div>
+    <footer>
+      
+    <div class="container">
+        <div class="footer-center">
+            <div class="sharethis-inline-share-buttons" style="background-color:transparent;width:100%"></div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <p class="copyright">The Rational Muslim Website. All Rights Reserved.</p>
+            <div>
+                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+            </div>
+        </footer>
+    </div>
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5a38395dd447d80012ded662&product=inline-share-buttons' async='async'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </footer>
+
+</body>
+
+</html>

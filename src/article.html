@@ -15,23 +15,27 @@
 </head>
 <body>
   <main>
-    {{> header}}
+    <header>
+    {% include "./common/header.html" %}
+  </header>
     <div class="jumbotron">
       <div class="center">
         <picture>
-          <source media="(min-width: 465px)" srcset="{{data.fields.featuredImage.fields.file.url}}?w=400&h=400">
-          <img src="{{data.fields.featuredImage.fields.file.url}}?w=345&h=250" >
+          <source media="(min-width: 465px)" srcset="{{imageFileUrl}}?w=400&h=400">
+          <img src="{{imageFileUrl}}?w=345&h=250" >
 </picture>
       <!--  <img src="{{data.fields.featuredImage.fields.file.url}}" class="img-responsive" /> -->
       </div>
         <div>
-            <h1 class="text-center">{{ data.fields.title }}</h1></div>
-            <p><b><i>{{data.fields.description}}<i></b></p>
+            <h1 class="text-center">{{ title }}</h1></div>
+            <p><b><i>{{ description }}<i></b></p>
 
     </div>
-      <div class="markdown" data-markdown>{{ data.fields.body }}</div>
+      <div class="markdown" data-markdown>{{ body }}</div>
   </main>
-  {{> footer}}
+  <footer>
+  {% include "./common/footer.html" %}
+</footer>
   <script src="https://rationalmuslim.netlify.com/assets/js/article.js"></script>
 
 </body>
